@@ -35,13 +35,13 @@ body{
 .shape:first-child{
     border-radius: 50%;
     left: -125px;
-    top: -170px;
+    top: -190px;
     animation: spin_1 5s linear infinite;
 }
 .shape:last-child{
     border-radius: 50%;
     right: -125px;
-    bottom: -170px;
+    bottom: -190px;
     animation: spin_2 5s linear infinite;
 }
 @keyframes spin_1 {
