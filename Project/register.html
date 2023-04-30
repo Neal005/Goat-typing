@@ -24,7 +24,7 @@
   <form>
     <div class="logo">
         <a href="./index.html"><img id="logo" src="./images/logo.png"></a>
-        <h3>Goat Type Register</h3>
+        <h3>Register</h3>
     </div>
     <label for="username">Email or Phone</label>
     <input class="sign_up" type="text" placeholder="Email or Phone" id="username" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$|[0-9]{10}|[0-9]{11}" required>
@@ -41,9 +41,13 @@
     </div>
     <div class="gender">
       <label for="gender">Chọn giới tính của bạn</label>
-      <input type="checkbox" id="nam"> <span>Nam</span> 
-      <input type="checkbox" id="nu"> <span>Nữ</span> 
+      <div id="nam">Nam</div>
+      <input id="gender_toggle" type="range">
+      <div id="nu">Nữ</div>
     </div>
-    <button onclick="sign_up()">Sign Up</button>
+    <input type="checkbox" required><div class="rule">By clicking "sign up" you agree to our terms!</div>
+    <button class="sign_up" onclick="sign_up()">Sign Up</button>
+    <div id="login"><a id="login" href="./login.html">Alredy have an account</a></div>
+  </form>
 </body>
 </html>

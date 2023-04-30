@@ -34,14 +34,14 @@ body{
 }
 .shape:first-child{
     border-radius: 50%;
-    left: -80px;
-    top: -130px;
+    left: -125px;
+    top: -170px;
     animation: spin_1 5s linear infinite;
 }
 .shape:last-child{
     border-radius: 50%;
-    right: -80px;
-    bottom: -120px;
+    right: -125px;
+    bottom: -170px;
     animation: spin_2 5s linear infinite;
 }
 @keyframes spin_1 {
@@ -87,7 +87,7 @@ label{
 }
 input.sign_up{
     height: 50px;
-    width: 350px;
+    width: 100%;
     background-color: rgba(255,255,255,0.07);
     border-radius: 3px;
     padding: 2px;
@@ -109,6 +109,9 @@ button{
     border-radius: 10px;
     cursor: pointer;
 }
+.sign_up{
+    margin-top: 10px;
+}
 .social{
 margin-top: 30px;
 display: flex;
@@ -122,20 +125,6 @@ background-color: rgba(255,255,255,0.27);
 color: #eaf0fb;
 text-align: center;
 }
-.social div:hover{
-    background-color: rgba(255,255,255,0.47);
-}
-.social .fb{
-    color: rgb(209, 208, 197);
-    margin-left: 25px;
-}
-.social .go{
-    color: rgb(209, 208, 197);
-}
-.social i{
-margin-right: 4px;
-}
-
 .remember{
     padding-top: 10px;
     font-size: 13px;
@@ -148,118 +137,71 @@ margin-right: 4px;
 }
 .material-symbols-outlined{
     position: absolute;
-    left: 82%;
-    top: 224px;
+    left: 85%;
+    top: 32%;
 }
 .password i{
     position: absolute;
-    left: 82%;
-    top: 334px;
+    left: 85%;
+    top: 47.75%;
 }
 .repassword i{
     position: absolute;
-    left: 82%;
-    top: 443px;
+    left: 85%;
+    top: 63%;
 }
 .gender{
     font-size: 15px;
 }
-.gender #nu{
-    margin-left: 10px;
-}
 .gender label{
     font-size: 15px;
 }
+div#login{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.rule{
+    margin-left: 10px;
+    font-size: small;
+    display: inline;
+}
+#nam{
+    font-size: small;
+    display: inline;
+}
+#nu{
+    font-size: small;
+    display: inline;
+}
+
 @media only screen and (max-width: 980px) {
-    #logo{
-        width: 200px;
-    }
-    input.remember{
-        padding: 10px;
-        transform: scale(1.5);
-    }
-    form h3{
-        font-size: 70px;
-        line-height: 80px;
-    }
-    span{
-        margin-top: 10px;
-        font-size: 25px;
-    }
     form{
+        margin: auto;
         width: 90%;
-        background-color: rgba(255,255,255,0.13);
-        padding: 35px 35px;
-    }
-    button{
-        margin-top: 25px;
-        font-size: 35px;
-        font-weight: 600;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-    input.login{
-        height: 100px;
-        width: 100%;
-        background-color: rgba(255,255,255,0.07);
-        border-radius: 3px;
-        padding: 10px;
-        margin-top: 8px;
-        font-size: 25px;
-        font-weight: 300;
-    }
-    .social .fb{
-        width: 100%;
-    }
-    .social .go{
-        width: 100%;
-    }
-    .shape:first-child{
-        transform: scale(2.5);
-        left: -320px;
-        top: -280px;
-    }
-    .shape:last-child{
-        transform: scale(2.5);
-        right: -320px;
-        bottom: -280px;
-    }
-    i{
-        font-size: 25px;
+        padding: 5px 5px;
     }
     .material-symbols-outlined{
-        transform: scale(2);
-        top: 365px;
-        left: 87%;
-    }
-    label{
-        display: block;
-        color: rgb(209, 208, 197);
-        margin-top: 25px;
-        font-size: 40px;
-        font-weight: 500;
-    }
-    ::placeholder{
-        font-size: 1.5em;
-    }
-    .go{
-        font-size: 25px;
-    }
-    .fb{
-        font-size: 25px;
-    }
-    .remember span{
         position: absolute;
-        left: 55px;
-        top: 617px;
-    }
-    .remember a{
-        font-size: 25px;
-        right: 5%;
+        left: 90%;
+        top: 30%;
     }
     .password i{
-        transform: scale(1.5);
-        top: 565px;
-        left: 87%;
+        position: absolute;
+        left: 90%;
+        top: 47.5%;
     }
-  }
+    .repassword i{
+        position: absolute;
+        left: 90%;
+        top: 64%;
+    }
+    .shape:first-child{
+        left: -70px;
+        top: -160px;
+    }
+    .shape:last-child{
+        right: -70px;
+        bottom: -160px;
+    }
+}
