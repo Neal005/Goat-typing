@@ -117,11 +117,11 @@ const app = class {
       (function startWithResponsive() {
         if (window.innerWidth < WIDTH_MOBILE) {
           $("#nav").addClass("mobile");
-          $("#logo").attr("src", "./images/logo.png");
+          $("#logo").attr("src", "./images/logo_name_v2.png");
           $("#control").addClass("mobile");
         } else {
           $("#nav").removeClass("mobile");
-          $("#logo").attr("src", "./images/logo_name.png");
+          $("#logo").attr("src", "./images/logo_name_v1.png");
           $("#control").removeClass("mobile");
         }
       })();
@@ -253,11 +253,11 @@ const app = class {
       $(window).resize(function (e) {
         if (e.target.innerWidth < WIDTH_MOBILE) {
           $("#nav").addClass("mobile");
-          $("#logo").attr("src", "./images/logo.png");
+          $("#logo").attr("src", "./images/logo_name_v2.png");
           $("#control").addClass("mobile");
         } else {
           $("#nav").removeClass("mobile");
-          $("#logo").attr("src", "./images/logo_name.png");
+          $("#logo").attr("src", "./images/logo_name_v1.png");
           $("#control").removeClass("mobile");
         }
       });
