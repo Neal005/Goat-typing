@@ -28,14 +28,18 @@ function regester(){
 	event.preventDefault();
 	var username=document.getElementById("username").value; 
 	var password=document.getElementById("password").value;
+	var repassword=document.getElementById("repassword").value;
 	var gender=document.getElementById("gender").value;
-	var user={
-	username: username,
-	password: password,
-	gender: gender
-	};
-	var json = JSON.stringify(user);
-	localStorage.setItem( username,json);
-	alert("Sign Up Success");
-	window.location.href="./login.html";
+	if(password==repassword){
+		var user={
+		username: username,
+		password: password,
+		gender: gender
+		};
+		var json = JSON.stringify(user);
+		localStorage.setItem( username,json);
+		alert("Sign Up Success");
+		window.location.href="./login.html";
+	}
+	else alert("Re-entered password is incorrect");
 }
