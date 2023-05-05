@@ -19,9 +19,10 @@ function login() {
 	var user=localStorage.getItem(username);
 	var data=JSON.parse(user);
 	if(user==null){
-	alert("vui long nhap username va password")
+	alert("You don't have an account yet, please register!")
 	}
 	else if(username==data.username&&password==data.password){
 	window.location.href="./index.html"
 	}
+	else alert("Username or password is incorrect");
 }

@@ -26,14 +26,16 @@ function showHiderePassword() {
 }
 function regester(){
 	event.preventDefault();
-	var username = document.getElementById("username").value; 
-	var password = document.getElementById("password").value;
+	var username=document.getElementById("username").value; 
+	var password=document.getElementById("password").value;
+	var gender=document.getElementById("gender").value;
 	var user={
 	username: username,
 	password: password,
+	gender: gender
 	};
 	var json = JSON.stringify(user);
 	localStorage.setItem( username,json);
-	alert("dang ky thanh cong");
+	alert("Sign Up Success");
 	window.location.href="./login.html";
 }
