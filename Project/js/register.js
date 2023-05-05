@@ -24,3 +24,16 @@ function showHiderePassword() {
 	document.querySelector("#retype").classList.add("fa-eye-slash");
 	}
 }
+function regester(){
+	event.preventDefault();
+	var username = document.getElementById("username").value; 
+	var password = document.getElementById("password").value;
+	var user={
+	username: username,
+	password: password,
+	};
+	var json = JSON.stringify(user);
+	localStorage.setItem( username,json);
+	alert("dang ky thanh cong");
+	window.location.href="./login.html";
+}
