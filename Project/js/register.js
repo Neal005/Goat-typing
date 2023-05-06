@@ -24,7 +24,7 @@ function showHiderePassword() {
 	document.querySelector("#retype").classList.add("fa-eye-slash");
 	}
 }
-function regester(){
+function register(){
 	event.preventDefault();
 	var username=document.getElementById("username").value; 
 	var password=document.getElementById("password").value;
