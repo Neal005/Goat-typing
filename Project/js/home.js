@@ -1,4 +1,9 @@
 // sua file data them vao
+var checklogin = localStorage.getItem("checklogin");
+if (checklogin === null){
+  window.location.href="./login.html";
+}
+
 import text from "../json/data.json" assert { type: "json" };
 const WIDTH_MOBILE = 660;
 const configText = [

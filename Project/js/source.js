@@ -1,5 +1,9 @@
-import text from "../json/data.json" assert { type: "json" };
+var checklogin = localStorage.getItem("checklogin");
+if (checklogin === null){
+  window.location.href="./login.html";
+}
 
+import text from "../json/data.json" assert { type: "json" };
 //support function
 
 const chunk = (array, size) =>

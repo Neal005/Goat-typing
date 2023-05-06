@@ -22,7 +22,9 @@ function login() {
 	alert("You don't have an account yet, please register!")
 	}
 	else if(username==data.username&&password==data.password){
-	window.location.href="./index.html"
+		var checklogin = "yes";
+		localStorage.setItem("checklogin", checklogin);
+		window.location.href="./index.html"
 	}
 	else alert("Username or password is incorrect");
 }
