@@ -1,8 +1,8 @@
-const name = "Trần Thu Ngân";
+const name = "<<name>>";
 
 
 
-const birthday = "13/02/2003";
+const birthday = "<<birthday>>";
 
 
 document.querySelector('.name').textContent = `Happy Birthday ${name}!`;
